@@ -4,14 +4,8 @@
 }
 
 
-.channel-picture{
-}
-
-.video-info{
-}
-
 .profile-picture{
-  width: 40px;
+  width: 36px;
   border-radius: 50px;
 }
 
@@ -20,7 +14,7 @@
   font-size: 14px;
   font-weight: 500;
   line-height: 20px;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .video-author,
@@ -34,7 +28,7 @@
 }
 
 .thumbnail-row{
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   position: relative;
 }
 
@@ -59,9 +53,18 @@
   grid-template-columns: 50px 1fr;
 }
 
+
+@media (max-width:750px) {
+  .video-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .video-grid{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   row-gap: 40px;
   column-gap: 16px;
 }
+
+
